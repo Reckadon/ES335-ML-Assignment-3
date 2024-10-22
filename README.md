@@ -26,12 +26,12 @@ Visualize the embeddings using t-SNE if using more than 2 dimensions or using a 
    
 **Datasets:**
 - Paul Graham essays
-- Wikipedia (English)
-- Shakespeare
-- Leo Tolstoy's War and Peace
-- The Adventures of Sherlock Holmes, by Arthur Conan Doyle
-- Maths texbook
-- Python or C++ code (Linux Kernel Code)
+- [Wikipedia](http://prize.hutter1.net/) (English)
+- [Shakespeare](https://cs.stanford.edu/people/karpathy/char-rnn/shakespeare_input.txt)
+- [Leo Tolstoy's War and Peace](https://cs.stanford.edu/people/karpathy/char-rnn/warpeace_input.txt)
+- [The Adventures of Sherlock Holmes, by Arthur Conan Doyle](https://www.gutenberg.org/files/1661/1661-0.txt)
+- [Maths texbook](https://github.com/stacks/stacks-project)
+- Python or C++ code ([Linux Kernel Code](https://cs.stanford.edu/people/karpathy/char-rnn/linux_input.txt))
 - IITGN advisory generation
 - IITGN website generation
 - Generate sklearn docs 
