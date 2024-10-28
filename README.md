@@ -1,6 +1,16 @@
 # ML-Assignment-3 - MLPs and Next-Word Prediction
 [doc link](https://docs.google.com/document/d/1zfuJH2ZUQ8XcUlF5EMhPIfwP7Bn5OK4-sICZFdKYg-8/edit?tab=t.0)
 ---
+### For collaborators:
+
+- Add a filter to your local project root to remove `ipynb` notebook metadata.
+
+```powershell
+nb-clean add-filter --preserve-cell-outputs --remove-all-notebook-metadata
+```
+
+_more docs [here](https://pypi.org/project/nb-clean/)_
+---
 ### Task 1:
 Refer to the [notebook](https://nipunbatra.github.io/ml-teaching/notebooks/names.html) on generating names using next-character prediction and modify it for generating text using **next-word prediction** (You have to implement MLP based text generator. However, it is recommended to refer to Andrej Karpathy’s blog post on the [Effectiveness of RNNs](https://karpathy.github.io/2015/05/21/rnn-effectiveness/)).
 
