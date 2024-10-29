@@ -9,7 +9,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-def loadData(filepath='warpeace.txt'):
+def loadData(filepath='Q1/warpeace.txt'):
     with open(filepath, 'r', encoding='utf-8') as f:
         text = f.read()
 
@@ -28,7 +28,7 @@ def loadData(filepath='warpeace.txt'):
     return stoi, itos, vocab_size, unique_words, words
 
 def load_model(embedding_size, context_length, activation_function):
-    model_name = f'model-Emb{embedding_size}-Con{context_length}-{activation_function}.pth'
+    model_name = f'Q1/model-Emb{embedding_size}-Con{context_length}-{activation_function}.pth'
     model = torch.load(model_name)
     model.eval()
     return model
@@ -104,4 +104,5 @@ if st.button("Generate Text"):
         st.error(f"Please enter a sequence of {context_length} words.")
     else:
         ans = generate_sentence(model, input_text, itos, stoi, context_length, num_words)
+        ans = input_text + ' ' + ans
         st.write(ans)
